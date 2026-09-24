@@ -1,0 +1,12 @@
+python -m venv venv  
+.\venv\Scripts\activate
+deactivate  
+
+pip install --upgrade pip
+python.exe -m pip install --upgrade pip
+pip install streamlit
+pip install "pypdf>=4.2.0" "reportlab>=4.2.0"
+pip install -r requirements.txt
+pip install "PyMuPDF>=1.24.0"
+pyinstaller --clean run_app.spec
+pip install pyinstaller
