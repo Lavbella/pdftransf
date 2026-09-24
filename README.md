@@ -1,2 +1,97 @@
-# pdftransf
- PDF Utility Tool built with Python &amp; Streamlit to merge, number, remove pages, and compress files. Includes PyInstaller support for standalone executable (.exe) creation.
+# PDF Utility Tool (Streamlit + PyInstaller)
+
+[Português](#pt) | [English](#en)
+
+---
+
+<a name="pt"></a>
+## 🇵🇹 Português
+
+Uma aplicação web intuitiva desenvolvida em Python com **Streamlit** que permite manipular ficheiros PDF (unir, numerar, remover páginas e comprimir). O projeto inclui suporte ao **PyInstaller** para converter a aplicação num executável (`.exe`) através de um script de arranque autónomo.
+
+### Funcionalidades
+* **Unir PDFs:** Combine múltiplos ficheiros PDF num único documento.
+* **Numerar Páginas:** Adicione paginação automática aos seus documentos.
+* **Remover Páginas:** Extraia ou elimine páginas específicas de um PDF.
+* **Comprimir PDF:** Reduza o tamanho do ficheiro mantendo a qualidade.
+
+### Estrutura do Projeto
+* `app.py`: Interface web e lógica principal das ferramentas de PDF.
+* `run_app.py`: Script de arranque que executa o `app.py` dentro do contexto do Streamlit.
+* `run_app.spec`: Ficheiro de configuração do PyInstaller para empacotamento.
+* `requirements.txt`: Dependências do projeto.
+* `.gitignore`: Garante que ficheiros temporários, o ambiente virtual e as pastas de compilação (`build/`, `dist/`) não são enviados para o repositório.
+* `venv/`: Ambiente virtual Python (ignorado pelo Git).
+
+### Como Compilar e Criar o Executável (.exe)
+
+Se quiseres gerar o executável autónomo para usar a aplicação offline sem necessitar do Python instalado:
+
+1. **Ativar o Ambiente Virtual:**
+   ```bash
+   # Windows
+   .\venv\Scripts\activate
+   # macOS/Linux
+   source venv/bin/activate
+   ```
+
+2. **Instalar as dependências:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Executar o comando de compilação:**
+   Aponta diretamente para o ficheiro de configuração do PyInstaller:
+   ```bash
+   pyinstaller run_app.spec
+   ```
+
+4. **Resultado:**
+   O executável final será gerado dentro da pasta `dist/`. Basta executar o `run_app.exe`.
+
+---
+
+<a name="en"></a>
+## 🇬🇧 English
+
+An intuitive web application built with Python and **Streamlit** that allows you to manipulate PDF files (merge, number, remove pages, and compress). The project includes **PyInstaller** support to convert the application into a standalone executable (`.exe`) via a dedicated bootstrap script.
+
+### Features
+* **Merge PDFs:** Combine multiple PDF files into a single document.
+* **Page Numbering:** Add automatic pagination to your documents.
+* **Remove Pages:** Extract or delete specific pages from a PDF.
+* **Compress PDF:** Reduce file size while maintaining visual quality.
+
+### Project Structure
+* `app.py`: Streamlit web interface and core PDF manipulation logic.
+* `run_app.py`: Bootstrap script that invokes `app.py` within the Streamlit runtime.
+* `run_app.spec`: PyInstaller configuration file for packaging.
+* `requirements.txt`: Project dependencies.
+* `.gitignore`: Prevents temporary files, the virtual environment, and build folders (`build/`, `dist/`) from being uploaded to the repository.
+* `venv/`: Python virtual environment (ignored by Git).
+
+### How to Build the Executable (.exe)
+
+To generate a standalone executable so you can run the app offline without having Python installed:
+
+1. **Activate the Virtual Environment:**
+   ```bash
+   # Windows
+   .\venv\Scripts\activate
+   # macOS/Linux
+   source venv/bin/activate
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Run the build command:**
+   Use the custom PyInstaller spec file:
+   ```bash
+   pyinstaller run_app.spec
+   ```
+
+4. **Result:**
+   The final executable will be generated inside the `dist/` folder. Simply run `run_app.exe`.
