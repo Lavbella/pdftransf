@@ -6,6 +6,7 @@
 
 <a name="pt"></a>
 ## 🇵🇹 Português
+📦 **Download Direto:** Não precisa de compilar o código! Pode descarregar o executável (`.exe`) pronto a usar diretamente na secção de [Releases](https://github.com) deste repositório.
 
 Uma aplicação web intuitiva desenvolvida em Python com **Streamlit** que permite manipular ficheiros PDF (unir, numerar, remover páginas e comprimir). O projeto inclui suporte ao **PyInstaller** para converter a aplicação num executável (`.exe`) através de um script de arranque autónomo.
 
@@ -58,6 +59,8 @@ Se quiseres gerar o executável autónomo para usar a aplicação offline sem ne
 
 <a name="en"></a>
 ## 🇬🇧 English
+
+📦 **Direct Download:** You don't even need to compile the code! You can download the standalone executable (`.exe`) ready for immediate use directly from the [Releases](https://github.com) section of this repository.
 
 An intuitive web application built with Python and **Streamlit** that allows you to manipulate PDF files (merge, number, remove pages, and compress). The project includes **PyInstaller** support to convert the application into a standalone executable (`.exe`) via a dedicated bootstrap script.
 
